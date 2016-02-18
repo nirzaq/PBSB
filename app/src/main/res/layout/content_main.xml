@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="id.arief.pbsb.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/probar"
+
+        android:indeterminate="true"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        app:cpb_color="#3F51B5"
+        app:cpb_rotation_speed="1.0"
+        app:cpb_sweep_speed="1.0"
+        app:cpb_stroke_width="4dp"
+        app:cpb_min_sweep_angle="10"
+        app:cpb_max_sweep_angle="300"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        />
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- place your view here -->
+
+        <!--Feed News List-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

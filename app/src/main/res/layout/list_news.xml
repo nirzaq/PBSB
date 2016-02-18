@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+    <!--thumbnail-->
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="16dp"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:id="@+id/linearLayout">
+
+        <!--title-->
+
+        <TextView
+            android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:textColor="@color/title"
+        android:layout_below="@+id/category"
+        android:layout_alignLeft="@+id/category"
+        android:layout_alignStart="@+id/category" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/timestamp"
+        android:textSize="@dimen/timestamp"
+        android:id="@+id/timestamp" />
+    <!--Category-->
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
