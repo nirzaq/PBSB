@@ -1,0 +1,1 @@
+Simple Android App to Read news from STMIK Banjabaru
